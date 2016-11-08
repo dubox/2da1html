@@ -1,0 +1,73 @@
+*{ margin: 0; padding: 0; }
+ul, ol { list-style: outside none; }
+fieldset, img { border: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+body, small, sup, sub, button, input, textarea, select { font: 12px/1 Arial, Helvetica, Verdana, SimSun, sans-serif; }
+html{background:#fff;}
+body { line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: Consolas, "Lucida Console", Courier, SimSun, monospace; }
+sup, sub { position: relative; vertical-align: baseline; }
+sup { top: -3px; }
+sub { bottom: -3px; }
+button { padding: 5px 10px; overflow: visible; }
+a{ color:#fff; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+
+.logForm .iptxtArea .zi{ width:44px; text-align:center; }
+
+.logForm{ width:280px; height:185px; position:relative; }
+
+.logForm .options{ width:200px; height:20px; line-height:20px; position:absolute; top:80px; left:44px; *left:40px;}
+.logForm .options .check{0}
+.logForm .options p{ float:left;}
+.lz_font_account{width:44px; height:24px; line-height:24px; position:absolute; left:0; top:13px;}
+.lz_font_pwd{width:44px; height:24px; line-height:24px; position:absolute; left:0; top:47px;}
+
+.lz_first{width:140px; height: 24px; display:block; overflow:hidden; position:absolute; left:44px; top:13px;}
+.lz_last{width:140px; height: 24px; display:block; overflow:hidden; position:absolute; left:44px; top:47px;}
+
+.iptxt input{ width:135px; height: 24px; background: #c4c4c4; line-height: 24px; padding-left: 5px; border: none;}
+
+
+.btnRec{ background:url(../../images/www/login.png) no-repeat -67px 0; width: 60px; height: 61px; position:absolute; left:120px; -left:160px; top:3px; -top:8px; cursor: pointer; border: none;}
+.btnRec:hover{ background-position: 0 0;}
+.lz_ljzc{ display:none;}
+.lz_line{ background:url(../../images/www/line.png) no-repeat; width:2px; height:12px; overflow:hidden; position:absolute; left:63px; *left:70px; top:4px; }
+.check{ float:left; margin:3px 6px 0 0; display:inline; *margin-top:0;-margin-top:-2px;}
+.iptCheck{ float:left;}
+.first label{ float:left;}
+/* 新登录框 */
+.widget_login { }
+.widget_login .tab_sep { float: left; margin-top:20px; color:#2b2b2b; display:none;}
+.widget_login .tabs { list-style: none;width: 280px; height: 31px;overflow: hidden; margin: 0; padding: 0; }
+.widget_login .tab { position: relative; float: left; width:140px; height: 30px; line-height:30px; color: #ccc; font-size: 16px; text-decoration: none; white-space: nowrap; text-align: center; cursor: pointer; outline: none; font-family:"微软雅黑"; background:#fff; border-bottom:#ddd solid 1px;}
+.widget_login .tab_account{ text-align:center; }
+.widget_login .tab_other{ text-align:center; }
+.widget_login .tabs .active,
+.widget_login .tabs .active:hover { color: #2b2b2b; cursor: pointer; background:#e8e8e8; border-bottom:#ddd solid 1px;}
+.panel ul { list-style: none; margin: 5px 0 0 0px;_margin: 5px 0 0 0px; padding: 0;}
+.panel ul li { margin-bottom: 5px; clear:both;height: 32px;line-height: 1.25;}
+.account_num ul li span { display: inline-block; width: 50px; height:26px; line-height:26px; color: #011f35; float:left; display:none; }
+.account_num .login_tip {width: 140px; margin:0;height: 35px;line-height: 35px; font-family:"微软雅黑";text-align: center;color: #2b2b2b;}
+.account_num .login_tip a { color: #2b2b2b; text-decoration: none; }
+.account_num input.btn_login { position: absolute;top:auto;left:auto; bottom: 5px;_bottom: 10px; right: 2px; display: inline-block; width: 67px; height: 28px; background:url(../images/btn_login.png)  no-repeat; }
+.account_num input.btn_login:hover { background:url(../images/btn_logins.png)  no-repeat;}
+
+.lz_txt_account{ background:url(../images/icon_user2.png) left center no-repeat #fff;  height:30px; line-height:32px; width:223px; border:1px solid #ddd; padding:0 0px 0 55px;}
+.lz_txt_pwd{ background:url(../images/icon_lock2.png) left center no-repeat #fff;  height:32px; line-height:30px; width:223px; border:1px solid #ddd; padding:0 0px 0 55px;}
+
+
+/* 验证码样式添加 */
+.account_num ul li span.account_txt{ display:none; color:#888888; font-family:"微软雅黑"; line-height:32px;}
+.account_num ul li input.styleInputBoxS{width:36px;}
+#tips{width:258px;position: absolute; height:178px; padding:30px 0 0 20px;line-height:24px; text-align: left;  clear: both; color: #2b2b2b; display:none; background:#fafafa; border:#eeeeee solid 1px; right:5px; top:5px; z-index:5 }
+.panels{ clear: both;height: 145px;}
+#vcode{ float:left; display:inline; margin-right:8px; width:130px; padding:0 5px; height:32px; line-height:32px; background:#fff no-repeat;  outline:none; border:1px solid #ddd;}
+.imgCode{ display: inline; float:left; height:32px;*margin:-15px 0 0 0;}
+.imgCode img{ width:80px; height:32px;}
+#return_state{ display: none;}
+.tabpanel-account{position: relative;background: #fff;height:185px;}
+#tips{width:258px;position: absolute; height:153px; padding:30px 0 0 20px;line-height:24px; text-align: left;  clear: both; color: #2b2b2b; display:none; background:#fafafa; border:#ddd solid 1px; left:0px; top:0px; z-index:5 }
+#tips .close{ position: absolute; top:8px;right:3px;width:24px; height:24px; padding-bottom:2px; display: block; cursor: pointer; color:#333; text-align:center;font-weight: bold;font-size: 16px;font-family: 微软雅黑;}

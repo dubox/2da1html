@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>联众新世界</title>
+	<link rel="stylesheet" type="text/css" href="css/webhalls4.css?timestamp=14004725236322"/>
+    <script type="text/javascript" src="http://passport.ourgame.com/js/our.js"></script>
+	<script type="text/javascript" src="http://passport.ourgame.com/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://passport.ourgame.com/js/junqi.js"></script>
+	<script type="text/javascript">
+	//刷新验证码
+	function freshcode() {
+		var myDate = new Date();
+		var key = "auth.webhalls.login." + myDate.getTime() + Math.random();
+		document.getElementById('captchaKey').value = key;
+		document.getElementById("imgcode").src = 'http://captcha.ourgame.com/lzcaptcha?key=' + key;
+	}
+	</script>    
+</head>
+<body style="background-color: transparent;">
+
+<script type="text/javascript" src="/scripts/en.js?v=97406"></script>
+
+
+
+<form id="webhallsForm" name="webhallsForm" action="lzgamelogin!authWebhalls.do" method="post" class="logForm" data-type="account" onSubmit="auth(); return false;">
+    <input type="hidden" id="regurl" name="regurl" value="" />
+    <input type="hidden" id="from" name="from" value="ddz"/>
+    <input type="hidden" id="nextUrl" name="nexturl" value="http://ddz.lianzhong.com/Default.aspx?nextUrl=http://ddz.lianzhong.com/website/login/index" />
+    <input type="hidden" id="game" name="game" value="ddznew" />
+    <div class='widget_login tabpanel-account'>
+            <ul class="tabs">
+                <li class="tab active tab_account" data-type="account">联众账号</li>
+                <li class="tab_sep">|</li>
+                <li class="tab tab_other" data-type="others">手机/邮箱</li>
+            </ul>
+            <div id='tips' title=''>错误提示：<br><em class="close" id='tip_close'>×</em><span></span></div>
+            <div class="panels">
+                <div class="account_num panel">
+                    <ul>
+                        <li>
+                            <span id="account_label">联众账号</span>
+                            <input id="loginUserName" type="text" name="account" value="" autocomplete="off" class="lz_txt_account lz_text">
+                        </li>
+                        <li class="li_pwd">
+                            <span class='account_pwd'>密码</span>
+                            <input type="password" value="" id="loginPassword" name="password" class="lz_txt_pwd lz_text">
+                        </li>
+                        
+	                    	<li class="inValidate">
+	                            <span class="account_txt">验证码</span>
+	                            <input id="vcode" name="vcode" type="text" class="styleInputBoxS" maxlength="4" />&nbsp;<span id="return_state"></span>
+	                            <div class="imgCode">
+	                            	<img id="imgcode" width="65" height="18" src="" border="0" onClick="javascript:freshcode();" />
+	                            	<input type="hidden" id="captchaKey" name="verifyKey" />
+	                            </div>
+                            	<script type="text/javascript">
+                            		freshcode();
+                            	</script>	                             
+	                         </li>       
+                         
+                         
+                    </ul>
+                    <input type="hidden" name="logintype" id="logintype" value=""/>
+                    <div class="login_tip">
+                        <a href="http://id.ourgame.com/scenter/nasPwd!forgetPwd1.do" target="_blank" class="lz_zhmm a_pwd">找回密码</a>
+                        <span>|</span>
+                        
+                        
+                        
+                        	<a href="http://id.ourgame.com/regist4index.do?g=ddz/ddznew&project=ddz/ddznew" target="_blank" class="lz_zhmm a_sign">立即注册</a>
+                        
+                        
+                    </div>
+                    <div class="btnArea">
+                        <input type="submit" class="btn_login btnRec" value="">
+                        <a href="http://quickid.ourgame.com/guest/autoRegister.do?game=ddz&third=204&nexturl=http://ddz.lianzhong.com/Default.aspx?nextUrl=http://ddz.lianzhong.com/website/login/index%3Fchannelid%3D204" target="_top"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</form>
+<script type="text/javascript">
+
+    //禁用空格和回车键
+	function disable(){
+		document.onkeydown = function () {
+	      if (window.event && (window.event.keyCode == 13 || event.keyCode==32)) {
+		     window.event.returnValue = false;
+	      }
+	    }
+	}
+	//启用空格和回车键
+	function enable(){
+		document.onkeydown = function () {
+		  if (window.event && (window.event.keyCode == 13 || event.keyCode==32)) {
+			  window.event.returnValue = true;
+		  }
+		}
+	}
+
+	$(".account_num input").each(function(i,value){
+      value.blur();
+      document.body.blur();
+    });
+
+	enable();
+
+    function tips(str){
+      $("#tips").show();
+      $("#tips span").html(str);
+	  disable();
+    }
+
+    window.onload = function(){
+       $(".account_num input").each(function(i,n){
+           n.focus(function(){
+               $("#tips").hide();
+               $("#tips span").text('');
+	           enable();
+           });
+        });
+    };
+
+
+    (function(){
+       var $ = document.$;
+       var $form = $('#webhallsForm');
+       var $tabs = $('.tabs');
+       var $active = $tabs.find('.active');
+       var $accountLabel = $('#account_label');
+       $tabs.on('click:relay(li.tab)', function() {
+           if ($active) {
+               $active.removeClass('active');
+               //$form.reset();
+           }
+           $active = this.addClass('active');
+           $form.setData('type', $active.getData('type'));
+           $accountLabel.innerText = this.innerText;
+           return false;
+       });
+   })();
+   function auth() {
+	   //console.log(document.find(".account_num").findAll("input"))
+       //document.find(".account_num").findAll("input").forEach(function(data){
+		  //data.blur();
+	   //});
+       var $ = document.$;
+       var $form = $('#webhallsForm');
+       //var action = $form.action;
+       var loginType = $form.getData('type').toUpperCase();
+       var userName = $form.getFieldValue('account').trim();
+       var password = $form.getFieldValue('password');
+       if (userName && password) {
+           if (loginType === 'OTHERS') {
+               loginType = (/^1\d{10}$/.test(userName)) ? 'MOBILE' : 'EMAIL';
+           }
+           $('#logintype').value = loginType;
+           //$form.action = action + '?';
+           //console.log(userName, password, loginType);
+               submit();
+           }
+           else {
+               //window.open('http://passport.ourgame.com/lzgamelogin!webhallb.do?from=' + $('#from').value + '&nextUrl=' + $('#nextUrl').value + '&regurl=' + $('#regurl').value + '&error=-1', '_top');
+				 tips("请填写用户名或密码");
+				 	   
+			
+              }
+			  
+           
+    }
+
+    
+
+    document.getElementById("tip_close").onclick=function(){
+      $("#tips").hide();
+	  enable();
+    }
+
+</script>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</body>
+</html>

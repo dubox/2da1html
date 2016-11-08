@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>HTTP 404- 无法找到文件</title>
+    <meta name="keywords" content="斗地主,斗地主官网,联众斗地主官网,天天斗地主,联众天天斗地主,联众欢乐斗地主,联众黄金联赛,单机复式赛,地主擂台赛,单机斗地主,斗地主竞技平台">
+    <meta name="Description" content="天天斗地主是联众游戏出品的一款集趣味性、广泛性、专业性于一身的棋牌游戏，在天天斗地主，你可以体验到：丰富多彩的斗地主玩法，趣味十足的真人免费赛，更有丰厚福利大奖等着你！全球最专业的二打一平台，天天斗地主，天天都欢乐！">
+    <meta name="Description" content="斗地主,联众斗地主,天天斗地主,玩斗地主上电视,斗地主赢话费,黄金联赛,联众黄金联赛,斗地主黄金联赛,斗地主电视赛,全球最专业斗地主竞技平台,全天免费拿话费大奖 ,棋牌大赛,联众棋牌大赛,玩斗地主赢取黄金大奖,斗地主黄金大奖,北京站黄金联赛,西安站黄金联赛,天津站黄金联赛,长沙站黄金联赛,洛阳站黄金联赛,单机斗地主,单机复式赛,斗地主电视台录影赛,斗地主擂台赛,联众二打一,全球最专业的二打一,斗地主竞技,休闲游戏,棋牌比赛,棋牌大赛,智力运动会,欢乐斗地主,欢乐二打一,斗地主视频,斗地主活动,斗地主新闻,斗地主网吧赛,门票争霸赛,电视预选赛。" />
+<style type="text/css">
+	*{ margin:0; padding:0;}
+	@font-face {
+    font-family: 'SingleSleeveRegular';
+    src: url('font/sing-webfont.eot');
+    src: url('font/sing-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/sing-webfont.woff') format('woff'),
+         url('font/sing-webfont.ttf') format('truetype'),
+         url('font/sing-webfont.svg#SingleSleeveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+</style>
+<script type="text/javascript">
+    var shijian = 5;
+    function show() {
+        var showtext = document.getElementById("showtext");
+        showtext.innerHTML = shijian;
+        shijian--;
+        if (shijian == 0) {
+            window.location.href = '/index.html';//跳转地址
+        } else {
+            setTimeout("show()", 1000);
+        }
+    }	
+</script>
+</head>
+<body style="background:#186aa9 url(images/sky-background.png) repeat-x;" onLoad="show()">
+   <div style="background:url(images/sky-shine.jpg) top center no-repeat; width:980px; padding:180px 31px 0; margin:0 auto;">
+    	<div style="float:left; background:url(images/404.png) no-repeat; width:419px; height:200px; display:inline; margin-left:10px;" class="alpha"></div>
+        <div style="float:right; display:inline; margin-right:10px;">
+        	<h1 style="font-size:40px;color:#fff; font-family:'微软雅黑'; letter-spacing:2px; margin-bottom:50px;"><span style=" font-size:50px; font-family:'SingleSleeveRegular', cursive; ">sorry，</span>找不到您的页面!</h1>
+            <p style="text-align:center; font-size:24px; color:#FFF; font-family:'微软雅黑'; letter-spacing:2px;"><span id="showtext">5</span>秒后，<a href="/index.html" style="color:#fff;">返回首页</a></p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <div style=" display:none">
+    HTTP 404- 无法找到文件
+    未找到路径“/website/homerty”的控制器或该控制器未实现 IController。
+    </div>
+    <!--[if ie 6]><script src="js/DD_belatedPNG.js"></script><![endif]-->
+</body>
+</html>

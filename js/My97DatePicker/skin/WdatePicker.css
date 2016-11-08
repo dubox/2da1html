@@ -1,0 +1,9 @@
+.Wdate{
+	width: 283px;height: 28px;line-height: 32px;padding-left:15px;border: 1px solid #CFCFCF;border-radius: 0px;margin-right: 20px;background:#fff url(calendar-blue.png) no-repeat 270px;
+}
+.Wdate::-ms-clear{display:none;}
+
+.WdateFmtErr{
+	font-weight:bold;
+	color:red;
+}

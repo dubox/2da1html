@@ -1,0 +1,50 @@
+/***********************************************
+ * 联众世界子站点、游戏官网及活动页通用顶部与底部样式 *
+ * Styles Created in 2007.08.09 by Ring ********
+ * OICQ: 6725337; MSN: yfring@msn.com **********
+ ***********************************************/
+ 
+ /* Top Settings */
+#OurGameTop { background: url(http://www.ourgame.com/copyright/img/og_topbg.gif) repeat-x left top; height: 37px; position: relative; font: normal 12px/12px Arial, Helvetica, sans-serif; }
+#OurGameTop div.OGmenuConts { width: 860px; margin: 0 auto; height: 100%; }
+#OurGameTop div.OGFullScreen { padding: 0 10px; margin: 0; width: auto; height: 100%; }
+#OurGameTop h3, #OurGameTop ul, #OurGameTop ul li, #ogBottomLogo { float: left; }
+#OurGameTop h3 { margin: 0px; padding: 0px; }
+#OurGameTop a.logo { display: block; background: url(http://www.ourgame.com/copyright/img/og_logo.gif) no-repeat center top; width: 140px; height: 37px; text-indent: -9999px; overflow: hidden; }
+#OGMainMenu, #OGSecondMenu { padding: 0px; margin: 0px; }
+#OurGameTop ul#OGSecondMenu { float: right; }
+#OGMainMenu { margin: 0px 15px; }
+#OGMainMenu li { width: 38px; padding-top: 10px; list-style: none; }
+#OGMainMenu a { display: block; margin: 0px auto; background-position: center center; background-repeat: no-repeat; width: 35px; height: 18px; text-indent: -9999px; overflow: hidden; }
+#OGMainMenu a.menu01 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_01.gif); }
+#OGMainMenu a.menu02 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_02.gif); }
+#OGMainMenu a.menu03 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_03.gif); }
+#OGMainMenu a.menu04 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_04.gif); }
+#OGMainMenu a.menu05 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_05.gif); }
+#OGMainMenu a.menu06 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_06.gif); }
+#OGMainMenu a.menu07 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_07.gif); }
+#OGMainMenu a.menu08 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_08.gif); }
+#OGMainMenu a.menu09 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_09.gif); }
+#OGMainMenu a.menu10 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_10.gif); }
+#OGMainMenu a.menu11 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_11.gif); }
+#OGMainMenu a.menu12 { background-image: url(http://www.ourgame.com/copyright/img/topmenu_12.gif); }
+#OGSecondMenu li { padding: 13px 3px 0px 3px; list-style: none; }
+#OGSecondMenu a { color: #6d767d; text-decoration: none; }
+#OGTopShadow { position: absolute; background: url(http://www.ourgame.com/copyright/img/og_topshadow.png) repeat-x left top!important; background-image: none; top: 37px; left: 0px; z-index: 999; width: 100%; height: 4px; font-size: 0px; }
+
+/* Bottom Settings */
+#OGCopyRight { width: 1000px; margin: 0 auto; padding: 40px 0; text-align: center; font: normal 12px/150% Arial, Helvetica, sans-serif; position: relative; background: #fff;} 
+#OGCopyRight p { margin: 0; }
+#OGCopyRight a { text-decoration: none; }
+#OGCopyRight p#OGHealthTips { border-bottomr-color: #d90208; border-bottom-width:  2px; border-bottom-style: solid; color: #d90208; line-height: 22px; overflow: hidden;  }
+#OGCopyRight p.quickLinks { background: url(http://www.ourgame.com/copyright/img/dot_b_line.gif) repeat-x left bottom; margin: 0 auto 3px; padding: 8px 185px; height: 1%; overflow: hidden!important; overflow: visible; }
+#OGCopyRight p.quickLinks a { float: left; width: 60px; line-height: 14px; border-left: #E1E1E1 1px solid; }
+#OGCopyRight p.quickLinks a.noLine { border-left: none; }
+#OGCopyRight a.bottomOGLogo { display: block; width: 85px; height: 32px; position: absolute; bottom: 20px; left: 100px; text-indent: -9999px; overflow: hidden; cursor: pointer; }
+#OGCopyRight a.OGIcp { display: block; background: url(http://www.ourgame.com/copyright/img/icp.gif) no-repeat left top; width: 40px; height: 48px; position: absolute; bottom: 20px; right: 150px; text-indent: -9999px; overflow: hidden; }
+.OGInfoLight, .OGInfoLight a { color: #4D4D4D; }
+.OGInfoLight a.bottomOGLogo { background: url(http://www.ourgame.com/copyright/img/og_bottom_logo.png) no-repeat left top!important; background: none; }
+.OGInfoDark, .OGInfoDark a, .OGInfoDark #OGCopyRightInfo { color: #999; }
+.OGInfoDark p.quickLinks a { border-left: #999 1px solid; }
+.OGInfoDark a.bottomOGLogo { background: url(http://www.ourgame.com/copyright/img/og_bottom_logo2.png) no-repeat left top!important; background: none; }
+#OGCopyRightInfo span img{margin: 0 auto;}

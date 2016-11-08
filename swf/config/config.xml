@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config project="FFS_DEV">
+
+	<!--舞台设置-->
+	<stage align="TOP_LEFT" scale="NO_SCALE" frameRate="30" menu="true" quality="BEST"/>
+
+	<!--调试器设置-->
+	<debugger enabled="true">
+		<log host="172.21.28.60" port="5003"/>
+		<log host="172.21.28.43" port="5003"/>
+	</debugger>
+	
+	<!--选项配置-->
+	<options>
+	
+	   <!--多客户端调试xuan'xiang-->
+		<option key="ServerMultipleId" type="JSON">1</option>
+		
+		<!--客户端PB编码-->
+		<option key="DefaultPBEncoding" type="JSON">"gb2312"</option>
+		
+		<!--通用代理服务地址 172.28.15.26:22347  佳伟服务：172.21.28.82:22347 敬磊比赛系统：172.28.41.106:22560 -->
+		<option key="CommonServerIP" type="JSON">"172.28.15.26"</option> 
+		<!--通用代理服务端口--> 
+  		<option key="CommonServerPort" type="JSON">22347</option> 
+  		
+	</options>
+	<!--资源配置-->
+	<assets>
+		<!--功能模块-->
+	    <!--必选资源-->
+		<group key="resources" baseUrl="assets/common/" optional="false">
+			<!--公用资源-->
+			<asset key="common" type="SWF" cache="VERSION" ver="3.2">common.swf</asset>
+			<!--大厅资源-->
+			<asset key="hall" type="SWF" cache="VERSION" ver="3.2">hall.swf</asset>
+		</group>
+			<group key="modules" baseUrl="" optional="false">
+			<!--主模块-->
+			<asset key="main" type="SWF" cache="VERSION" ver="3.2">Main.swf</asset>
+		</group>
+		<!--可选资源-->
+		<group key="gameResources" baseUrl="" optional="true">
+		</group>
+	</assets>
+</config>

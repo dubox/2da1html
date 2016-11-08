@@ -1,0 +1,112 @@
+  *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            font-size: 12px;
+            color: #666;
+            line-height: 18px;
+        }
+        ul, li
+        {
+            list-style: none;
+        }
+        .fb
+        {
+            font-weight: bold;
+        }
+        .main
+        {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .banner
+        {
+            width: 1000px;
+        }
+        .content
+        {
+            width: 1024px;
+            position: relative;
+            overflow:hidden;
+        }
+        .content .sideA
+        {
+           /* width: 708px;
+            height: 624px;*/
+            float: left;
+            border: 0px solid #ddd;
+        }
+        .content .mg_right
+        {
+            width: 240px;
+            background-color: #f8f8f8;
+            position: absolute;
+            right: 0px;
+            top: 10px;
+        }
+        .content .mg_right .title
+        {
+            background: url(/Images/Common/title.png) no-repeat;
+            height: 31px;
+            line-height: 31px;
+            color: #fff;
+            padding-left: 40px;
+            text-align: left;
+        }
+        .content .mg_right .title span, .content .mg_right .title a
+        {
+            display: block;
+        }
+        .content .mg_right .title span
+        {
+            float: left;
+        }
+        .content .mg_right .title a
+        {
+            float: right;
+            width: 16px;
+            height: 16px;
+            background: url(/Images/Common/tip.gif) no-repeat;
+            margin-top: 7px;
+            margin-right: 10px;
+            display: inline;
+        }
+        .content .mg_right .con
+        {
+            border: 1px solid #ddd;
+            border-top: none;
+            padding-left: 6px;
+            width: 232px;
+            height: 445px;
+        }
+        .content .mg_right .info
+        {
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .content .mg_right .info ul
+        {
+            height: 141px;
+            padding: 6px 0 0 16px;
+            width: 200px;
+            text-align:left;
+        }
+        .content .mg_right .info li
+        {
+            background: url(/Images/Common/dot.png) no-repeat 0 5px;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .content .mg_right .news img
+        {
+            border: 1px solid #dfdfdf;
+            margin-top: 8px;
+        }
+        .pt10
+        {
+            padding-top: 10px;
+        }
